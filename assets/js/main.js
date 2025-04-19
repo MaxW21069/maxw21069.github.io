@@ -1,4 +1,8 @@
-
+/*
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 (function($) {
 
@@ -254,5 +258,17 @@
 				});
 
 			});
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+	$(window).on('load', function() {
+		navigator.serviceWorker.register('/service-worker.js')
+			.then(function(registration) {
+				console.log('Service Worker registered with scope:', registration.scope);
+			})
+			.catch(function(error) {
+				console.error('Service Worker registration failed:', error);
+			});
+	});
+}
 
 })(jQuery);
