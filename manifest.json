@@ -27,7 +27,7 @@
     "form_factor": "wide"
   },
   {
-    "src": "/screenshots/https://maxw21069.github.io/images/homemobile.png",
+    "src": "https://maxw21069.github.io/images/homemobile.png",
     "sizes": "720x405",
     "type": "image/png"
   }
